@@ -60,16 +60,16 @@ public class Loops {
   }//main
 
   //This is the best sort we know of
-  public int QuickSort(int[] array, int left, int right) {
+  public void QuickSort(int[] array, int left, int right) {
     int i = left;
     int j = right;
     int pivot = array[(left+right)/2];
-    if(left > right) return 1;//I deviated from the algorithms online
+    if(left > right) return;//I deviated from the algorithms online
     //I like this halt better
 
     while(i <= j) {
       while(array[i] < pivot) {//Push I to the first value greater than the pivot
-        i++;
+        i++
       }
       while(array[j] > pivot) {//Push J to the fitst value lesser than the pivot
         j--;
@@ -80,6 +80,8 @@ public class Loops {
         j--;
       }//if
     }//while i<=j
-    return QuickSort(array, left, j)+QuickSort(array, i, right);
+    QuickSort(array, left, j);
+    QuickSort(array, i, right);
+    return;
   }//QuickSort
 }//loops
