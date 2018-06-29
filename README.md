@@ -3,6 +3,7 @@
 Hi class, I am Justin Baum. I am a student at the University of South Carolina. Here I will be posting materials from class as well as cool reference materials and projects you can do to hone in your skills.
 
 6-29 Class:
+***
     Hi guys, I added the lesson we will be going over tomorrow under the folder 6-29. Do not worry about the sort code in there. We will be doing arrays, and looping. We will however be going over our first algorithm. We will most likely not code it today. We will go over the fundamentals of thinking of an algorithm, and how to solve problems. I chose sorting because this is not only the most well studied problem, it also happens to be a great one with many solutions with many different levels of not only complexity, but of efficiency. Algorithms are fundamental to Computer Science. It is important we introduce ourselves to them, as we will be not only using them throughout, but we will be making our own. Hope you all had a good time to rest, and looking forward to our lesson!
 
 About me:
