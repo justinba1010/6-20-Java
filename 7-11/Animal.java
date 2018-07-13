@@ -55,7 +55,7 @@ public class Animal {
 	/**
 	* Sets new value of age
 	* @param
-	*/
+  */
 	public void setAge(int age) {
 		this.age = age;
 	}
