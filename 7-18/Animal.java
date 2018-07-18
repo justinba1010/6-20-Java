@@ -4,7 +4,7 @@ public class Animal {
   private boolean male;
   private int age;
   private String name;
-  
+
   public Animal(String type, boolean male, int age, String name) {
     this.type = type;
     this.male = male;
@@ -12,80 +12,41 @@ public class Animal {
     this.name = name;
   }//Animal
 
+  public String getType() {
+    return type;
+  }//getType
 
-	/**
-	* Returns value of type
-	* @return
-	*/
-	public String getType() {
-		return type;
-	}//getType
+  public void setType(String type) {
+    this.type = type;
+  }//setType
 
-	/**
-	* Sets new value of type
-	* @param
-	*/
-	public void setType(String type) {
-		this.type = type;
-	}//setType
+  public boolean isMale() {
+    return male;
+  }//isMale
 
-	/**
-	* Returns value of male
-	* @return
-	*/
-	public boolean isMale() {
-		return male;
-	}//isMale
+  public void setMale(boolean male) {
+    this.male = male;
+  }//setMale
 
-	/**
-	* Sets new value of male
-	* @param
-	*/
-	public void setMale(boolean male) {
-		this.male = male;
-	}//setMale
+  public int getAge() {
+    return age;
+  }//getAge
 
-	/**
-	* Returns value of age
-	* @return
-	*/
-	public int getAge() {
-		return age;
-	}//getAge
+  public void setAge(int age) {
+    this.age = age;
+  }//setAge
 
-	/**
-	* Sets new value of age
-	* @param
-  */
-	public void setAge(int age) {
-		this.age = age;
-	}//setAge
+  public String getName() {
+    return name;
+  }//getName
 
-	/**
-	* Returns value of name
-	* @return
-	*/
-	public String getName() {
-		return name;
-	}//getName
+  public void setName(String name) {
+    this.name = name;
+  }//setName
 
-	/**
-	* Sets new value of name
-	* @param
-	*/
-	public void setName(String name) {
-		this.name = name;
-	}//setName
-
-
-
-	/**
-	* Create string representation of Animal for printing
-	* @return
-	*/
-	public String toString() {
-		return "Animal [type=" + type + ", male=" + male + ", age=" + age + ", name=" + name + "]";
-	}//toString
+  public String toString() {
+    return "Animal [type=" + type + ", male=" + male + ", age=" + age + ", name=" + name + "]";
+  }//toString
 
   public boolean equals(Animal anAnimal) {//Returns true when the two animals are equal
     //We need this for our Collector
