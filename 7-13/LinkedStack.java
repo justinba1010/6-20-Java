@@ -1,11 +1,11 @@
-class LinkedStack {
+class LinkedStack<T>{
   private Node head;
 
   private class Node{
-    protected int value;
+    protected T value;
     protected Node next;//This is called a pointer, we use it to point to another object
 
-    public Node(int value) {
+    public Node(T value) {
       this.value = value;
       this.next = null;//Null tells the computer there is nothing
     }//Node constructor
@@ -14,8 +14,8 @@ class LinkedStack {
   public LinkedStack() {
     this.head = null;
   }//LinkedStack
-
-  public void push(int value) {
+t
+  public void push(T value) {
     if(this.head == null) {
       //This means the stack is empty
       this.head = new Node(value);//This puts the head of the stack as a new node with a value
@@ -28,12 +28,12 @@ class LinkedStack {
     this.head = newNode;
   }//push
 
-  public int pop() {
+  public T pop() {
     if(this.isEmpty()) {
       System.out.println("The stack is empty.");
       return 0;
     }//if empty
-    int value = this.head.value;//We want the value before we throw the old top of the stack out
+    T value = this.head.value;//We want the value before we throw the old top of the stack out
     this.head = this.head.next; //We move the head to the next node in the stack
     return value;
   }//pop

@@ -1,19 +1,19 @@
 import java.util.*;
 public class AnimalCollector {
-  private ArrayList<Animal> animals;
+  private LinkedList<Animal> animals;
   public AnimalCollector() {
-    animals = new ArrayList<Animal>();
+    this.animals = new LinkedList<Animal>();
   }//AnimalCollector
 
   public void addAnimal(Animal anAnimal) {
-    animals.add(anAnimal);
+    this.animals.add(anAnimal);
   }//addAnimal
   public void removeAnimal(Animal anAnimal) {
-    animals.remove(anAnimal);
+    this.animals.remove(anAnimal);
   }//removeAnimal
 
   public void print() {
-    for(Animal animal : animals) {
+    for(Animal animal : this.animals) {
       System.out.print(animal);
     }//for
   }//print
