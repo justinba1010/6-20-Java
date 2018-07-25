@@ -5,7 +5,7 @@ public class Deck {
   private ArrayList<Card> dealt;
   private Random randomgenerator;
   public Deck() {
-    //First we're going to loop through all the card permtations
+    //First we're going to loop through all the card permtations, and add a new card according to every match
     for(Card.Suits suit : Card.Suits.values()) {
       for(Card.Cards card : Card.Cards.values()) {
         this.deck.add(new Card(suit, card));
