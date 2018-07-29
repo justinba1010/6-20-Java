@@ -57,6 +57,10 @@ class Deck {
     }//for
   }//shuffle
 
+  public boolean isEmpty() {
+    return this.size == 0;
+  }
+
   private void swap(int i, int j) {
     Card iCard = this.deck[i];
     Card jCard = this.deck[j];
